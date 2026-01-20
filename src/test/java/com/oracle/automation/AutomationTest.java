@@ -16,7 +16,7 @@ public class AutomationTest {
 
     public static void main(String[] args) throws Exception {
 
-        // 1️⃣ Fetch latest DB record
+        // Fetch latest DB record
         String tmisId;
         String status;
 
@@ -37,7 +37,7 @@ public class AutomationTest {
         System.out.println("TMIS ID : " + tmisId);
         System.out.println("DB Status : " + status);
 
-        // 2️⃣ Validate DB
+        // Validate DB
         if ("E".equals(status)) {
             System.out.println("NEGATIVE CASE CONFIRMED");
             System.out.println("Queue Validation SKIPPED");
@@ -50,7 +50,7 @@ public class AutomationTest {
 
         System.out.println("POSITIVE CASE CONFIRMED");
 
-        // 3️⃣ Validate queue (CONSUME, not browse)
+        // Validate queue (CONSUME, not browse)
         ActiveMQConnectionFactory factory =
                 new ActiveMQConnectionFactory(ACTIVEMQ_URL);
 
