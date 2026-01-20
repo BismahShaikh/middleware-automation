@@ -7,9 +7,9 @@ import org.apache.activemq.ActiveMQConnectionFactory;
 public class AutomationTest {
 
     private static final String ORACLE_URL =
-            "jdbc:oracle:thin:@localhost:1521:FREE";
-    private static final String ORACLE_USER = "System";
-    private static final String ORACLE_PASS = "Bismah786";
+            "";
+    private static final String ORACLE_USER = "";
+    private static final String ORACLE_PASS = "";
 
     private static final String ACTIVEMQ_URL = "tcp://localhost:61616";
     private static final String OUTPUT_QUEUE = "output-queue";
